@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pic Bloom | Make Every Photo Bloom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">
+      <div class="logo-mark">PB</div>
+      <span class="logo-text">Pic Bloom</span>
+    </div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#cta" class="btn primary small">Get Early Access</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">AI photo refinement</p>
+        <h1>Make every photo bloom.</h1>
+        <p class="lede">Pic Bloom sharpens, brightens, and balances your shots in seconds. Upload, tweak, and publish with pro-level polish—no heavy software required.</p>
+        <div class="cta-row">
+          <a href="#cta" class="btn primary">Start free</a>
+          <a href="#features" class="btn ghost">See how it works</a>
+        </div>
+        <div class="stats">
+          <div><strong>10k+</strong><span>photos refined</span></div>
+          <div><strong>92%</strong><span>projects finished faster</span></div>
+          <div><strong>4.8★</strong><span>creator satisfaction</span></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="card-header">
+          <span>Before</span>
+          <span>After</span>
+        </div>
+        <div class="card-image">
+          <div class="image before"></div>
+          <div class="image after"></div>
+        </div>
+        <div class="upload-row">
+          <div class="upload-label" id="dropArea" role="button" tabindex="0" aria-label="Upload or drop a photo">
+            <div class="upload-icon">⬆</div>
+            <div class="upload-text">
+              <strong>Drop a photo or click to upload</strong>
+              <span>JPG/PNG, under ~10MB works best.</span>
+            </div>
+            <input type="file" id="photoUpload" accept="image/*">
+          </div>
+          <span class="upload-hint">We do everything in-browser; your image stays on your device.</span>
+        </div>
+        <div class="card-controls">
+          <div>
+            <label>Clarity</label>
+            <div class="slider"><div style="width: 72%"></div></div>
+          </div>
+          <div>
+            <label>Color Bloom</label>
+            <div class="slider"><div style="width: 64%"></div></div>
+          </div>
+          <div>
+            <label>Noise Clean</label>
+            <div class="slider"><div style="width: 48%"></div></div>
+          </div>
+        </div>
+        <button type="button" class="btn secondary full-width" id="downloadBtn" disabled>
+          Download your photo
+        </button>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-header">
+        <p class="eyebrow">What you get</p>
+        <h2>Pro-grade edits without the friction.</h2>
+        <p class="lede">Auto-enhance, then fine-tune with intuitive controls. Pic Bloom keeps your flow simple while preserving every pixel of detail.</p>
+      </div>
+      <div class="grid features-grid">
+        <div class="card feature">
+          <div class="icon">✨</div>
+          <h3>One-click polish</h3>
+          <p>Smart presets boost exposure, contrast, and vibrancy while respecting skin tones.</p>
+        </div>
+        <div class="card feature">
+          <div class="icon">🎯</div>
+          <h3>Selective focus</h3>
+          <p>Mask and refine subjects or backgrounds independently—keep what matters razor sharp.</p>
+        </div>
+        <div class="card feature">
+          <div class="icon">🌿</div>
+          <h3>Color bloom</h3>
+          <p>Balanced saturation and tone curves add life without overcooking your shots.</p>
+        </div>
+        <div class="card feature">
+          <div class="icon">🛡️</div>
+          <h3>Noise guard</h3>
+          <p>Clean grain and low-light artifacts while keeping edges natural and crisp.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow" class="section split">
+      <div class="section-header">
+        <p class="eyebrow">Workflow</p>
+        <h2>From upload to “wow” in three steps.</h2>
+        <p class="lede">Upload, auto-enhance, then dial in the details with live previews and instant exports.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <div>
+            <h3>Upload or drag & drop</h3>
+            <p>Supports RAW and high-res JPEG. Your originals stay untouched.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <div>
+            <h3>Auto-enhance + tweak</h3>
+            <p>AI sets the baseline. You adjust clarity, bloom, tone, and focus with guided sliders.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <div>
+            <h3>Export instantly</h3>
+            <p>One-click exports for web, social, or print with size and format presets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="section-header">
+        <p class="eyebrow">Pricing</p>
+        <h2>Start free. Upgrade when you’re ready.</h2>
+      </div>
+      <div class="pricing">
+        <div class="card price">
+          <p class="eyebrow">Starter</p>
+          <h3>$0</h3>
+          <p class="lede">20 edits/month, core tools, web export.</p>
+          <ul>
+            <li>Auto-enhance + sliders</li>
+            <li>Noise guard & color bloom</li>
+            <li>Web-size exports</li>
+          </ul>
+          <a href="#cta" class="btn primary">Get started</a>
+        </div>
+        <div class="card price popular">
+          <p class="eyebrow">Pro</p>
+          <h3>$18/mo</h3>
+          <p class="lede">Unlimited edits, RAW, batch export, priority speed.</p>
+          <ul>
+            <li>All Starter features</li>
+            <li>RAW + TIFF support</li>
+            <li>Batch export presets</li>
+            <li>Side-by-side compare</li>
+          </ul>
+          <a href="#cta" class="btn primary">Upgrade</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta" id="cta">
+      <div class="cta-box">
+        <div>
+          <p class="eyebrow">Early access</p>
+          <h2>Ready to see your photos bloom?</h2>
+          <p class="lede">Join the waitlist—get first invites, early features, and launch perks.</p>
+        </div>
+        <form class="cta-form">
+          <input type="email" placeholder="your@email.com" aria-label="Email">
+          <button type="submit" class="btn primary">Join waitlist</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="logo">
+      <div class="logo-mark">PB</div>
+      <span class="logo-text">Pic Bloom</span>
+    </div>
+    <p>Sharper shots, richer stories.</p>
+    <div class="footer-links">
+      <a href="#features">Features</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#pricing">Pricing</a>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var fileInput = document.getElementById('photoUpload');
+      var dropArea = document.getElementById('dropArea');
+      var downloadBtn = document.getElementById('downloadBtn');
+      if (!fileInput || !dropArea) return;
+
+      var beforeEl = document.querySelector('.card-image .before');
+      var afterEl = document.querySelector('.card-image .after');
+
+      var beforeGradient = 'linear-gradient(135deg, rgba(0,0,0,0.55), rgba(0,0,0,0.25))';
+      var afterGradient = 'linear-gradient(135deg, rgba(138, 92, 246, 0.18), rgba(79, 209, 197, 0.18))';
+
+      var lastDataUrl = '';
+
+      function setPreview(file) {
+        if (!file || !file.type || !file.type.startsWith('image/')) return;
+        var reader = new FileReader();
+        reader.onload = function (e) {
+          var dataUrl = e.target && e.target.result;
+          if (!dataUrl) return;
+          lastDataUrl = dataUrl;
+          if (beforeEl) {
+            beforeEl.style.backgroundImage = beforeGradient + ', url("' + dataUrl + '")';
+          }
+          if (afterEl) {
+            afterEl.style.backgroundImage = afterGradient + ', url("' + dataUrl + '")';
+          }
+          if (downloadBtn) {
+            downloadBtn.disabled = false;
+          }
+        };
+        reader.readAsDataURL(file);
+      }
+
+      fileInput.addEventListener('change', function (event) {
+        var files = event.target.files;
+        if (files && files[0]) {
+          setPreview(files[0]);
+        }
+      });
+
+      dropArea.addEventListener('click', function () {
+        fileInput.click();
+      });
+
+      dropArea.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          fileInput.click();
+        }
+      });
+
+      ['dragenter', 'dragover'].forEach(function (name) {
+        dropArea.addEventListener(name, function (e) {
+          e.preventDefault();
+          dropArea.classList.add('dragging');
+        });
+      });
+
+      ['dragleave', 'drop'].forEach(function (name) {
+        dropArea.addEventListener(name, function (e) {
+          e.preventDefault();
+          dropArea.classList.remove('dragging');
+        });
+      });
+
+      dropArea.addEventListener('drop', function (e) {
+        var files = e.dataTransfer && e.dataTransfer.files;
+        if (files && files[0]) {
+          setPreview(files[0]);
+        }
+      });
+
+      if (downloadBtn) {
+        downloadBtn.addEventListener('click', function () {
+          if (!lastDataUrl) return;
+          var link = document.createElement('a');
+          link.href = lastDataUrl;
+          link.download = 'pic-bloom-photo.jpg';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+
